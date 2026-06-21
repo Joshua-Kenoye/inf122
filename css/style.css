@@ -3,9 +3,9 @@
    ======================================== */
 
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #f093fb;
+    --primary-color: #1e90ff;
+    --secondary-color: #0a4a8f;
+    --accent-color: #00bfff;
     --dark-color: #1a1a2e;
     --light-color: #f5f5f5;
     --text-color: #333;
@@ -126,13 +126,14 @@ body {
    ======================================== */
 
 .hero {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('../images/hero-background.png') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.85), rgba(10, 74, 143, 0.85)), url('../images/hero-image.png') center/cover no-repeat;
+    background-attachment: fixed;
     color: white;
     padding: 100px 20px;
     text-align: center;
     animation: fadeInDown 0.8s ease;
     position: relative;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
