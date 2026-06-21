@@ -126,7 +126,7 @@ body {
    ======================================== */
 
 .hero {
-    background: linear-gradient(135deg, rgba(30, 144, 255, 0.5), rgba(10, 74, 143, 0.5)), url('../images/hero-image.png') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.2), rgba(10, 74, 143, 0.2)), url('../images/hero-image.png') center/cover no-repeat;
     background-attachment: fixed;
     color: white;
     padding: 100px 20px;
