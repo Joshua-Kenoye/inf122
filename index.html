@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Course Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>💻 Web Programming</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="module1.html">Module 1</a></li>
+                <li><a href="module2.html">Module 2</a></li>
+                <li><a href="module3.html">Module 3</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Web Programming Course Hub</h2>
+            <p>Master the fundamentals of modern web development</p>
+            <button class="cta-button" onclick="scrollToModules()">Explore Modules</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About This Course</h2>
+            <p>
+                This comprehensive web programming course covers the essential technologies and concepts needed to build 
+                modern, interactive websites. Through three carefully structured modules, you'll learn HTML, CSS, and JavaScript 
+                fundamentals, progressing from basic concepts to advanced techniques. Each module includes practical examples, 
+                hands-on projects, and real-world applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules" id="modules">
+        <div class="container">
+            <h2>Course Modules</h2>
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card">
+                    <div class="module-image">
+                        <img src="images/module1.jpg" alt="Web Programming Basics">
+                    </div>
+                    <div class="module-content">
+                        <h3>Module 1: Web Programming Basics</h3>
+                        <p>
+                            Discover the foundations of web programming. Learn about the Internet, World Wide Web, 
+                            HTTP protocols, and the client-server architecture. Understand how web applications work 
+                            and the essential concepts that drive modern web development.
+                        </p>
+                        <ul class="topics-list">
+                            <li>Internet & WWW Fundamentals</li>
+                            <li>HTTP/HTTPS Protocols</li>
+                            <li>Client-Server Architecture</li>
+                            <li>Web Development Lifecycle</li>
+                        </ul>
+                        <a href="module1.html" class="btn-learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card">
+                    <div class="module-image">
+                        <img src="images/module2.jpg" alt="HTML5 & Forms">
+                    </div>
+                    <div class="module-content">
+                        <h3>Module 2: HTML5 & Forms</h3>
+                        <p>
+                            Master HTML5 markup language. Learn semantic HTML, create structured web pages, 
+                            build interactive forms, and work with multimedia elements. Understand how to structure 
+                            content for accessibility and SEO optimization.
+                        </p>
+                        <ul class="topics-list">
+                            <li>Semantic HTML5 Tags</li>
+                            <li>Forms & Input Elements</li>
+                            <li>Multimedia Integration</li>
+                            <li>Accessibility Standards</li>
+                        </ul>
+                        <a href="module2.html" class="btn-learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card">
+                    <div class="module-image">
+                        <img src="images/module3.jpg" alt="CSS3 & Styling">
+                    </div>
+                    <div class="module-content">
+                        <h3>Module 3: CSS3 & Styling</h3>
+                        <p>
+                            Transform your web pages with CSS3 styling. Learn selectors, the box model, 
+                            responsive design, flexbox, and grid layouts. Create beautiful, responsive websites 
+                            that work perfectly on all devices.
+                        </p>
+                        <ul class="topics-list">
+                            <li>CSS Selectors & Properties</li>
+                            <li>Box Model & Layouts</li>
+                            <li>Flexbox & Grid</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                        <a href="module3.html" class="btn-learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why This Course?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">📚</div>
+                    <h3>Comprehensive Content</h3>
+                    <p>From basics to advanced concepts, covering all essential web technologies</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Practical Learning</h3>
+                    <p>Hands-on examples and real-world projects to reinforce your skills</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Industry Ready</h3>
+                    <p>Learn modern best practices used by professional developers</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💡</div>
+                    <h3>Interactive Elements</h3>
+                    <p>Engage with multimedia content, forms, and interactive demonstrations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Web Programming Course Hub. All rights reserved.</p>
+            <p>Instructor: God'swill Richard Okon | Registration: 25/CO/IS/037 | Department: Information System</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

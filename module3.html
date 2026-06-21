@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: CSS3 & Styling</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>💻 Web Programming</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="module1.html">Module 1</a></li>
+                <li><a href="module2.html">Module 2</a></li>
+                <li><a href="module3.html" class="active">Module 3</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Module Header -->
+    <section class="module-header">
+        <div class="container">
+            <h1>Module 3: CSS3 & Styling</h1>
+            <p>Creating Beautiful and Responsive Web Designs</p>
+        </div>
+    </section>
+
+    <!-- Module Content -->
+    <section class="module-content">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="content-section">
+                <h2>Introduction</h2>
+                <p>
+                    CSS3 (Cascading Style Sheets Level 3) is the technology that transforms plain HTML into visually 
+                    appealing web pages. In this module, you'll learn how to style elements, create responsive layouts, 
+                    and build modern interfaces using flexbox and grid. CSS3 also introduces animations and transitions 
+                    for enhanced user experiences.
+                </p>
+            </div>
+
+            <!-- CSS Selectors -->
+            <div class="content-section">
+                <h2>CSS Selectors</h2>
+                <p>Selectors are patterns used to select HTML elements for styling:</p>
+                <table class="selectors-table">
+                    <thead>
+                        <tr>
+                            <th>Selector Type</th>
+                            <th>Syntax</th>
+                            <th>Example</th>
+                            <th>Targets</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Element</td>
+                            <td>element</td>
+                            <td>p { }</td>
+                            <td>All &lt;p&gt; elements</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>.classname</td>
+                            <td>.highlight { }</td>
+                            <td>Elements with class="highlight"</td>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td>#idname</td>
+                            <td>#header { }</td>
+                            <td>Element with id="header"</td>
+                        </tr>
+                        <tr>
+                            <td>Descendant</td>
+                            <td>parent child</td>
+                            <td>div p { }</td>
+                            <td>All &lt;p&gt; inside &lt;div&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>Attribute</td>
+                            <td>[attribute]</td>
+                            <td>input[type="text"] { }</td>
+                            <td>Elements with specific attribute</td>
+                        </tr>
+                        <tr>
+                            <td>Pseudo-class</td>
+                            <td>:pseudo</td>
+                            <td>a:hover { }</td>
+                            <td>Elements in specific state</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Box Model -->
+            <div class="content-section">
+                <h2>The CSS Box Model</h2>
+                <p>Every element on a webpage is a box with content, padding, border, and margin:</p>
+                <div class="box-model-demo">
+                    <div class="box-model-outer">
+                        <p>Margin (outer space)</p>
+                        <div class="box-model-border">
+                            <p>Border</p>
+                            <div class="box-model-padding">
+                                <p>Padding (inner space)</p>
+                                <div class="box-model-content">
+                                    <p>Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flexbox -->
+            <div class="content-section">
+                <h2>Flexbox Layout</h2>
+                <p>Flexbox is a powerful layout tool for creating flexible, responsive designs:</p>
+                <h3>Flexbox Example: Horizontal Layout</h3>
+                <div class="flexbox-demo">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                </div>
+                <p><small>Resize the window to see responsive behavior</small></p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="content-section">
+                <h2>CSS Grid Layout</h2>
+                <p>CSS Grid provides a two-dimensional layout system for complex designs:</p>
+                <h3>Grid Example: 3-Column Layout</h3>
+                <div class="grid-demo">
+                    <div class="grid-item">Grid Item 1</div>
+                    <div class="grid-item">Grid Item 2</div>
+                    <div class="grid-item">Grid Item 3</div>
+                    <div class="grid-item">Grid Item 4</div>
+                    <div class="grid-item">Grid Item 5</div>
+                    <div class="grid-item">Grid Item 6</div>
+                </div>
+            </div>
+
+            <!-- Colors and Gradients -->
+            <div class="content-section">
+                <h2>Colors and Gradients</h2>
+                <div class="colors-grid">
+                    <div class="color-box" style="background-color: #FF6B6B;">
+                        <p>Solid Color</p>
+                        <small>#FF6B6B</small>
+                    </div>
+                    <div class="color-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <p>Linear Gradient</p>
+                        <small>135deg</small>
+                    </div>
+                    <div class="color-box" style="background: radial-gradient(circle, #FFE66D, #FF6B6B);">
+                        <p>Radial Gradient</p>
+                        <small>circle</small>
+                    </div>
+                    <div class="color-box" style="background: linear-gradient(90deg, #FF6B6B, #FFE66D, #4ECDC4);">
+                        <p>Multi-Color Gradient</p>
+                        <small>3 colors</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transitions and Animations -->
+            <div class="content-section">
+                <h2>Transitions and Animations</h2>
+                <p>CSS3 enables smooth transitions and animations without JavaScript:</p>
+                <div class="animation-demo">
+                    <div class="transition-box">Hover me!</div>
+                    <div class="animation-box">Animated</div>
+                </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="content-section">
+                <h2>Responsive Design Principles</h2>
+                <div class="responsive-tips">
+                    <div class="tip-card">
+                        <h3>📱 Mobile First</h3>
+                        <p>Design for mobile devices first, then enhance for larger screens</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📐 Flexible Layouts</h3>
+                        <p>Use percentages and flexible units instead of fixed pixels</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🖼️ Flexible Images</h3>
+                        <p>Images should scale with their containing elements</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📺 Media Queries</h3>
+                        <p>Apply different styles based on device screen size</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="content-section">
+                <h2>Typography in CSS</h2>
+                <div class="typography-demo">
+                    <h3 style="font-family: 'Georgia', serif; font-size: 28px;">Serif Font - Georgia</h3>
+                    <h3 style="font-family: 'Arial', sans-serif; font-size: 28px;">Sans-serif Font - Arial</h3>
+                    <h3 style="font-family: 'Courier New', monospace; font-size: 28px;">Monospace Font - Courier New</h3>
+                    <p style="font-weight: 300;">Light weight text (300)</p>
+                    <p style="font-weight: 400;">Normal weight text (400)</p>
+                    <p style="font-weight: 700;">Bold weight text (700)</p>
+                    <p style="font-style: italic;">Italic text</p>
+                </div>
+            </div>
+
+            <!-- Key Takeaways -->
+            <div class="content-section">
+                <h2>Key Takeaways</h2>
+                <div class="takeaways-list">
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>CSS selectors target HTML elements for styling with varying specificity</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>The box model consists of content, padding, border, and margin</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>Flexbox and Grid provide modern, responsive layout solutions</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>Responsive design ensures websites work on all device sizes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="module-navigation">
+                <a href="module2.html" class="btn-nav">← Previous Module</a>
+                <a href="index.html" class="btn-nav">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Web Programming Course Hub. All rights reserved.</p>
+            <p>Instructor: God'swill Richard Okon | Registration: 25/CO/IS/037 | Department: Information System</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

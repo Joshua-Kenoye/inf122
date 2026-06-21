@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Web Programming Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>💻 Web Programming</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="module1.html">Module 1</a></li>
+                <li><a href="module2.html">Module 2</a></li>
+                <li><a href="module3.html">Module 3</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="module-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with the course instructor</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <!-- Instructor Information -->
+            <div class="contact-grid">
+                <div class="instructor-info">
+                    <h2>Instructor Information</h2>
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="info-label">👤 Name:</span>
+                            <span class="info-value">God'swill Richard Okon</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🎓 Registration Number:</span>
+                            <span class="info-value">25/CO/IS/037</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🏢 Department:</span>
+                            <span class="info-value">Information System</span>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 30px;">About the Instructor</h3>
+                    <p>
+                        God'swill Richard Okon is a dedicated instructor in the Information Systems department. 
+                        With expertise in web programming and modern development practices, he is committed to 
+                        providing comprehensive education in HTML, CSS, JavaScript, and web development frameworks.
+                    </p>
+                    <p>
+                        This course is designed to equip students with practical skills and theoretical knowledge 
+                        needed to succeed in web development careers. The curriculum covers fundamental concepts 
+                        through advanced techniques, ensuring a well-rounded understanding of web technologies.
+                    </p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <h2>Send a Message</h2>
+                    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="visitor-name">Your Name *</label>
+                            <input 
+                                type="text" 
+                                id="visitor-name" 
+                                name="visitor-name" 
+                                placeholder="Enter your full name" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitor-phone">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                id="visitor-phone" 
+                                name="visitor-phone" 
+                                placeholder="Enter your phone number" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitor-subject">Subject *</label>
+                            <input 
+                                type="text" 
+                                id="visitor-subject" 
+                                name="visitor-subject" 
+                                placeholder="What is your message about?" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitor-comments">Comments/Message *</label>
+                            <textarea 
+                                id="visitor-comments" 
+                                name="visitor-comments" 
+                                placeholder="Enter your message here..." 
+                                rows="5" 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <h2>Other Ways to Connect</h2>
+                <div class="methods-grid">
+                    <div class="method-card">
+                        <div class="method-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>Send us an email for detailed inquiries</p>
+                        <a href="mailto:contact@webprogramming.edu" class="method-link">contact@webprogramming.edu</a>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p>Call during office hours for quick assistance</p>
+                        <a href="tel:+234-800-000-0000" class="method-link">+234-800-000-0000</a>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">📍</div>
+                        <h3>Office Hours</h3>
+                        <p>Visit during scheduled office hours</p>
+                        <p class="method-link">Mon-Fri: 10 AM - 4 PM</p>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>Chat with us for immediate support</p>
+                        <button class="method-link" onclick="alert('Live chat feature coming soon!')">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>When are office hours?</h3>
+                        <p>Office hours are held Monday through Friday from 10 AM to 4 PM. You can also schedule appointments outside these times.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How long does it take to get a response?</h3>
+                        <p>We typically respond to emails within 24 hours during business days. Urgent matters may receive faster responses.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I ask questions about assignments?</h3>
+                        <p>Absolutely! We encourage students to ask questions about course material, assignments, and projects. Use the contact form or visit during office hours.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a discussion forum?</h3>
+                        <p>Yes! Check the course portal for the discussion forum where you can interact with classmates and instructors.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I get help with technical issues?</h3>
+                        <p>For technical issues, please describe the problem in detail when contacting us. Include screenshots if possible.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What if I need to reschedule a meeting?</h3>
+                        <p>Contact us as soon as possible to reschedule. We'll do our best to find a mutually convenient time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="module-navigation">
+                <a href="index.html" class="btn-nav">← Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Web Programming Course Hub. All rights reserved.</p>
+            <p>Instructor: God'swill Richard Okon | Registration: 25/CO/IS/037 | Department: Information System</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

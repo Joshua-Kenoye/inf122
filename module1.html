@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Web Programming Basics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>💻 Web Programming</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="module1.html" class="active">Module 1</a></li>
+                <li><a href="module2.html">Module 2</a></li>
+                <li><a href="module3.html">Module 3</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Module Header -->
+    <section class="module-header">
+        <div class="container">
+            <h1>Module 1: Web Programming Basics</h1>
+            <p>Understanding the Foundations of Web Development</p>
+        </div>
+    </section>
+
+    <!-- Module Content -->
+    <section class="module-content">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="content-section">
+                <h2>Introduction</h2>
+                <p>
+                    Welcome to the first module of our Web Programming course! This module establishes the foundational 
+                    concepts you need to understand how the web works. Before diving into coding, it's crucial to grasp 
+                    the underlying technologies and principles that power modern web applications.
+                </p>
+            </div>
+
+            <!-- Core Concepts -->
+            <div class="content-section">
+                <h2>Core Concepts</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>🌐 The Internet</h3>
+                        <p>
+                            A global system of interconnected computer networks that use the Internet Protocol Suite (TCP/IP) 
+                            to communicate. It enables data transmission across vast distances.
+                        </p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>🕸️ World Wide Web (WWW)</h3>
+                        <p>
+                            An information system built on top of the Internet that uses HTTP/HTTPS protocols. It allows 
+                            documents to be linked together through hypertext, creating an interconnected web of information.
+                        </p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>💻 Web Programming</h3>
+                        <p>
+                            The practice of writing code to create interactive and dynamic websites. It involves markup languages, 
+                            styling, scripting, and server-side logic to build complete web applications.
+                        </p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>🔗 Web Server</h3>
+                        <p>
+                            A computer that stores web pages and serves them to clients upon request. It runs server software 
+                            like Apache, Nginx, or Node.js to handle incoming HTTP requests.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Protocols -->
+            <div class="content-section">
+                <h2>Communication Protocols</h2>
+                <p>Protocols are standardized rules that enable communication between computers on the network:</p>
+                <table class="protocols-table">
+                    <thead>
+                        <tr>
+                            <th>Protocol</th>
+                            <th>Full Name</th>
+                            <th>Purpose</th>
+                            <th>Port</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTTP</td>
+                            <td>Hypertext Transfer Protocol</td>
+                            <td>Transfers web pages and resources from server to client</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>HTTPS</td>
+                            <td>Hypertext Transfer Protocol Secure</td>
+                            <td>Encrypted HTTP for secure data transmission</td>
+                            <td>443</td>
+                        </tr>
+                        <tr>
+                            <td>FTP</td>
+                            <td>File Transfer Protocol</td>
+                            <td>Transfers files between computers on a network</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>SMTP</td>
+                            <td>Simple Mail Transfer Protocol</td>
+                            <td>Sends email messages across the internet</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>DNS</td>
+                            <td>Domain Name System</td>
+                            <td>Translates domain names to IP addresses</td>
+                            <td>53</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Client-Server Architecture -->
+            <div class="content-section">
+                <h2>Client-Server Architecture</h2>
+                <div class="architecture-box">
+                    <div class="architecture-item">
+                        <h3>Client Side</h3>
+                        <ul>
+                            <li>Web browser (Chrome, Firefox, Safari, Edge)</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>User interface and interaction</li>
+                            <li>Runs on user's computer</li>
+                        </ul>
+                    </div>
+                    <div class="architecture-arrow">→</div>
+                    <div class="architecture-item">
+                        <h3>Server Side</h3>
+                        <ul>
+                            <li>Web server (Apache, Nginx, Node.js)</li>
+                            <li>Backend languages (Python, PHP, Java, Node.js)</li>
+                            <li>Database management</li>
+                            <li>Runs on remote computer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Lifecycle -->
+            <div class="content-section">
+                <h2>Web Development Lifecycle (WDLC)</h2>
+                <div class="lifecycle-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Planning</h3>
+                        <p>Define project scope, requirements, and objectives</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Design</h3>
+                        <p>Create wireframes, mockups, and design specifications</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Development</h3>
+                        <p>Write code for frontend, backend, and database</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Testing</h3>
+                        <p>Test functionality, performance, and cross-browser compatibility</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Deployment</h3>
+                        <p>Release the application to production environment</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <h3>Maintenance</h3>
+                        <p>Monitor, update, and fix issues in production</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Takeaways -->
+            <div class="content-section">
+                <h2>Key Takeaways</h2>
+                <div class="takeaways-list">
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>The Internet is a global network, while the Web is an application that runs on it</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>HTTP/HTTPS protocols enable communication between clients and servers</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>Web applications follow a client-server architecture</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>The WDLC provides a structured approach to web development</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="module-navigation">
+                <a href="index.html" class="btn-nav">← Back to Home</a>
+                <a href="module2.html" class="btn-nav">Next Module →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Web Programming Course Hub. All rights reserved.</p>
+            <p>Instructor: God'swill Richard Okon | Registration: 25/CO/IS/037 | Department: Information System</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

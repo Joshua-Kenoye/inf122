@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: HTML5 & Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>💻 Web Programming</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="module1.html">Module 1</a></li>
+                <li><a href="module2.html" class="active">Module 2</a></li>
+                <li><a href="module3.html">Module 3</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Module Header -->
+    <section class="module-header">
+        <div class="container">
+            <h1>Module 2: HTML5 & Forms</h1>
+            <p>Building Structured and Interactive Web Pages</p>
+        </div>
+    </section>
+
+    <!-- Module Content -->
+    <section class="module-content">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="content-section">
+                <h2>Introduction</h2>
+                <p>
+                    HTML5 is the latest standard for creating web pages. It provides semantic elements that give meaning 
+                    to web content, making it easier for browsers and search engines to understand. In this module, you'll 
+                    learn how to structure web pages properly and create interactive forms to collect user data.
+                </p>
+            </div>
+
+            <!-- HTML5 Semantic Elements -->
+            <div class="content-section">
+                <h2>HTML5 Semantic Elements</h2>
+                <p>Semantic HTML uses meaningful tags that describe the content:</p>
+                <table class="elements-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Purpose</th>
+                            <th>Example Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;header&gt;</td>
+                            <td>Page or section header</td>
+                            <td>Navigation, logo, page title</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;nav&gt;</td>
+                            <td>Navigation links</td>
+                            <td>Menu, breadcrumbs</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;main&gt;</td>
+                            <td>Main content area</td>
+                            <td>Primary page content</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;article&gt;</td>
+                            <td>Independent content</td>
+                            <td>Blog post, news article</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;section&gt;</td>
+                            <td>Thematic grouping</td>
+                            <td>Chapters, tabs, sections</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;aside&gt;</td>
+                            <td>Sidebar content</td>
+                            <td>Related links, ads</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td>Page or section footer</td>
+                            <td>Copyright, contact info</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Form Elements -->
+            <div class="content-section">
+                <h2>Interactive Form Example</h2>
+                <p>Below is a practical example of HTML5 form elements:</p>
+                
+                <form class="demo-form" onsubmit="handleFormSubmit(event)">
+                    <fieldset>
+                        <legend>Student Registration Form</legend>
+                        
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course">Select Course Track:</label>
+                            <select id="course" name="course" required>
+                                <option value="">-- Choose a track --</option>
+                                <option value="frontend">Frontend Web Development</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="fullstack">Full-Stack Development</option>
+                                <option value="mobile">Mobile App Development</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="startdate">Preferred Start Date:</label>
+                            <input type="date" id="startdate" name="startdate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Prior Experience:</label>
+                            <textarea id="experience" name="experience" placeholder="Tell us about your coding experience..." rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="terms" required>
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Register Now</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Form Input Types -->
+            <div class="content-section">
+                <h2>HTML5 Input Types</h2>
+                <div class="input-types-grid">
+                    <div class="input-type-card">
+                        <h3>text</h3>
+                        <p>Single-line text input</p>
+                        <input type="text" placeholder="Example text">
+                    </div>
+                    <div class="input-type-card">
+                        <h3>email</h3>
+                        <p>Email validation</p>
+                        <input type="email" placeholder="example@email.com">
+                    </div>
+                    <div class="input-type-card">
+                        <h3>number</h3>
+                        <p>Numeric input</p>
+                        <input type="number" placeholder="Enter a number">
+                    </div>
+                    <div class="input-type-card">
+                        <h3>date</h3>
+                        <p>Date picker</p>
+                        <input type="date">
+                    </div>
+                    <div class="input-type-card">
+                        <h3>color</h3>
+                        <p>Color picker</p>
+                        <input type="color">
+                    </div>
+                    <div class="input-type-card">
+                        <h3>range</h3>
+                        <p>Slider control</p>
+                        <input type="range" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Player -->
+            <div class="content-section">
+                <h2>Multimedia: Audio Element</h2>
+                <p>HTML5 provides native support for audio playback without plugins:</p>
+                <div class="audio-player-box">
+                    <h3>🎵 Module 2 Audio Lecture</h3>
+                    <audio controls class="audio-player">
+                        <source src="audio/module2-lecture.mp3" type="audio/mpeg">
+                        <source src="audio/module2-lecture.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p><small>Note: Replace 'module2-lecture.mp3' with your actual audio file</small></p>
+                </div>
+            </div>
+
+            <!-- Lists -->
+            <div class="content-section">
+                <h2>Organizing Content with Lists</h2>
+                <div class="lists-grid">
+                    <div class="list-box">
+                        <h3>Unordered List</h3>
+                        <ul>
+                            <li>HTML structure</li>
+                            <li>Semantic markup</li>
+                            <li>Accessibility</li>
+                            <li>SEO optimization</li>
+                        </ul>
+                    </div>
+                    <div class="list-box">
+                        <h3>Ordered List</h3>
+                        <ol>
+                            <li>Create HTML file</li>
+                            <li>Add semantic elements</li>
+                            <li>Create forms</li>
+                            <li>Test in browser</li>
+                        </ol>
+                    </div>
+                    <div class="list-box">
+                        <h3>Description List</h3>
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>HyperText Markup Language - structure</dd>
+                            <dt>CSS</dt>
+                            <dd>Cascading Style Sheets - styling</dd>
+                            <dt>JavaScript</dt>
+                            <dd>Programming language - interactivity</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Takeaways -->
+            <div class="content-section">
+                <h2>Key Takeaways</h2>
+                <div class="takeaways-list">
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>Use semantic HTML5 elements to give meaning to your content</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>HTML5 provides many input types for different data collection needs</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>Forms are essential for user interaction and data submission</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="checkmark">✓</span>
+                        <p>Native audio and video elements eliminate the need for plugins</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="module-navigation">
+                <a href="module1.html" class="btn-nav">← Previous Module</a>
+                <a href="module3.html" class="btn-nav">Next Module →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Web Programming Course Hub. All rights reserved.</p>
+            <p>Instructor: God'swill Richard Okon | Registration: 25/CO/IS/037 | Department: Information System</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
